@@ -1,0 +1,92 @@
+:root {
+	font-size: 20px;
+}
+body {
+	font-family: 'system-ui';
+
+}
+h2::first-letter {
+	font-weight: 800;
+	font-size: 3rem;
+}
+p::selection {
+	color: lime;
+	background: black;
+}
+.parent	{
+	background: tomato;
+	width: vmax;
+	padding: 5px;
+	text-align: center;
+}
+.child {
+	background: lime;
+	display: inline-block;
+	width: 20vw;
+	height: 20vh;
+}
+.second-child {
+	background: khaki;
+	display: inline-block;
+	width: 20vw;
+	height: 20vh;
+}
+.third-child {
+	background: rgb(0,255,0);
+	display: inline-block;
+	height: 20vh;
+	width: 20vw;
+}
+.fourth-child {
+	background: rgba(0,255,0,0.5);
+	display: inline-block;
+	height: 20vh;
+	width: 20vw;
+}
+.second-parent {
+	position: relative;
+	width: 40vw;
+	height: 80vh;
+	background: tomato;
+	padding: 5px;
+}
+.fab {
+	background: lime;
+	padding: 20px;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	border-radius: 50%;
+}
+button {
+	display: block;
+	width: 100px;
+	border-radius: 5px;
+	text-align: center;
+	text-decoration: none;
+}
+
+button:hover {
+	color: blue;
+}
+button:click {
+	color: green;
+}
+button::after {
+	content: "<<"	
+}
+button::before {
+	content: ">>"	
+}
+input:valid {
+background: green;
+}
+input:invalid {
+background: tomato;
+}
+input:required {
+border-color: red;
+}
+input:required:invalid {
+background: orange;
+}

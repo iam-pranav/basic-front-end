@@ -1,0 +1,48 @@
+.parent {
+	position: relative;
+	width: 50vw;
+	height: 10vh;
+	background: radial-gradient(tomato, deepskyblue);
+}
+.text {
+	text-align: center;
+	line-height: 4;
+	color: #fff;
+}
+
+/*Cascading example*/
+
+.some-parent {
+	background: deepskyblue;
+	padding: 10px;
+	width: 40vw;
+	height: 10vh;
+}
+.child {
+	background: khaki;
+}
+.some-parent .child {
+	background: tomato;
+	border: 5px dotted white !important;
+}
+#second-child {
+	background: lime;
+	border: 5px solid black;
+}
+/*Border example*/
+
+.border-example {
+	text-align: center;
+	background: beige;
+	border: 10px ridge orange;
+	border-top-color: lime;
+	border-bottom-color: deeppink;
+	border-top-left-radius: 10%;
+	border-bottom-right-radius: 10%;
+	border-bottom-right-radius: 30%;
+	border-left-style: dotted;
+	padding: 5px;
+	height: 10vh;
+	position: relative;
+	width: 40vw;
+}

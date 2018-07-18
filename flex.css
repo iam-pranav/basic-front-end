@@ -1,0 +1,89 @@
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	background-color:  gray;
+	/*padding: 5px;*/
+}
+
+.container-item {
+
+	height: 50vh;
+	
+}
+
+.myfont {
+
+	font-size: 50px;
+	color: white;
+}
+
+.blue {
+	background: blue;
+}
+.red {
+	background: red;
+}
+.green {
+	background: green;
+}
+.purple {
+	background: purple;
+}
+
+@media screen and (min-width: 800px) {
+
+
+    .blue {
+        width: 50vw;
+    }
+    .red {
+        width: 50vw;
+    }
+    .green {
+
+        width: 50vw;
+    }
+    .purple {
+        width: 50vw;
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width: 600px) {
+
+
+    .blue {
+
+        width: 50vw;
+    }
+    .red {
+
+        width: 50vw;
+    }
+    .green {
+
+        width: 100vw;
+    }
+    .purple {
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+
+
+    .blue {
+        width: 100vw;
+    }
+    .red {
+        width: 100vw;
+    }
+    .green {
+        width: 100vw;
+    }
+    .purple {
+        width: 100vw;
+    }
+}

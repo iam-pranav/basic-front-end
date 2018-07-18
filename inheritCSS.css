@@ -1,0 +1,36 @@
+root {
+	font-size: 10px;
+}
+
+.parent {
+	width: vmax;
+	text-align: center;
+	font-size: 20px;
+	background: lime;
+}
+.child {
+	font-size: unset;
+}
+.second-child {
+	font-size: inherit;
+}
+.outside {
+	font-size: initial;
+}
+
+@media screen and (min-width: 400px) and (max-width: 500px) {
+	.child {
+		font-size: 40px;
+		font-style: oblique;
+		color: red;
+	}
+}
+
+@media screen and (min-width: 300px) and (max-width: 400px) {
+	.child {
+		font-size: 60px;
+		font-style: italic;
+		font-weight: bolder;
+		color: gray;
+	}
+}
